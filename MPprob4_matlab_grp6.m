@@ -8,7 +8,7 @@ if ay == 0
 end
 t = (vo*sind(theta)+sqrt(((vo*sind(theta))^2)-2*(ay)*yo))/(-ay);    %time
 if t <= 0
-    t = (vo*sind(theta)-sqrt(vo*(sind(theta)^2)-2*(ay)*yo))/(-ay);
+    t = (vo*sind(theta)-sqrt(((vo*sind(theta))^2)-2*(ay)*yo))/(-ay);
 end
 x = (vo*cosd(theta)).*(0:t/333:t)+(ax.*(0:t/333:t).*(0:t/333:t))./2;
 y = yo+(vo*sind(theta)).*(0:t/333:t)+(ay.*(0:t/333:t).*(0:t/333:t))./2; 
